@@ -34,7 +34,8 @@ RUN grep -q '^password.*required' /etc/pam.d/common-password && sed -i 's/^passw
 
 # Vulnerability Advisor : Temporarily remove a specific <package> that was discovered vulnerable
 # RUN dpkg --purge --force-all <package>
-#RUN dpkg --purge --force-all imagemagick
+# KAD ADDED THIS FOR THE DEMO Mar 14 2017
+RUN dpkg --purge --force-all imagemagick
 
 
 # Define command to run the application when the container starts
